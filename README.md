@@ -6,7 +6,5 @@ It also shows you the return code of the last command, if non-zero, at the right
 
 ![Screenshot_20240808_231201](https://github.com/user-attachments/assets/cbd4de7f-7782-4b5f-b895-209ffb765f77)
 
-It may look slighlty different based on the terminal emulator and OS.
-
 Use it with oh my zsh.  
-Copy the theme file from the repo to this directory: `~/.oh-my-zsh/themes/michelebira.zsh-theme`
+Copy the theme file from the repo to this directory: `~/.oh-my-zsh/custom/themes/michelebira.zsh-theme`
