@@ -1,5 +1,5 @@
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
-local user_host="%B%{$fg[green]%}%n%{$fg[white]%}@%{$fg[yellow]%}%m%{$reset_color%}"
+local user_host="%B%{$fg[yellow]%}%n%{$fg[white]%}@%{$fg[yellow]%}%m%{$reset_color%}"
 local user_symbol="%{$fg[red]%}%(!.#.$)%{$reset_color%}"
 local current_dir="%B%{$fg[cyan]%}%~%{$reset_color%}"
 
@@ -17,9 +17,9 @@ ZSH_THEME_RVM_PROMPT_OPTIONS="i v g"
 local open_bracket="%B%{$fg[green]%}[%{$reset_color%}%b"
 local close_bracket="%B%{$fg[green]%}]%{$reset_color%}%b"
 local dash="%B%{$fg[green]%}-%{$reset_color%}%b"
-local roof="%B%{$fg[green]%}╭%{$reset_color%}%b" 
+local roof="%B%{$fg[green]%}╭%{$reset_color%}%b"
 local floor="%B%{$fg[green]%}╰─%{$reset_color%}%b"
- 
+
 PROMPT="${roof}${open_bracket}${user_host}${close_bracket}${dash}${open_bracket}${current_dir}${close_bracket} ${rvm_ruby}${vcs_branch}${venv_prompt}${kube_prompt}
 ${floor}%B${user_symbol}%b "
 RPROMPT="%B${return_code}%b"
@@ -42,4 +42,5 @@ ZSH_THEME_VIRTUAL_ENV_PROMPT_SUFFIX="› %{$reset_color%}"
 ZSH_THEME_VIRTUALENV_PREFIX="$ZSH_THEME_VIRTUAL_ENV_PROMPT_PREFIX"
 ZSH_THEME_VIRTUALENV_SUFFIX="$ZSH_THEME_VIRTUAL_ENV_PROMPT_SUFFIX"
 
-export LS_COLORS='di=1;36'
+export LS_COLORS='di=1;36:ex=31'
+
